@@ -1,0 +1,272 @@
+<!--&lt;!&ndash;<!DOCTYPE html>&ndash;&gt;-->
+<!--&lt;!&ndash;<html lang="en">&ndash;&gt;-->
+<!--&lt;!&ndash;<head>&ndash;&gt;-->
+<!--&lt;!&ndash;    <meta charset="UTF-8">&ndash;&gt;-->
+<!--&lt;!&ndash;    <title>پنل دیلی آف</title>&ndash;&gt;-->
+<!--&lt;!&ndash;</head>&ndash;&gt;-->
+<!--&lt;!&ndash;<body>&ndash;&gt;-->
+<!--&lt;!&ndash;<form class="form-inline" method="POST" action="daily-off-pannel">&ndash;&gt;-->
+<!--&lt;!&ndash;  <div class="form-group">&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;    <div class="input-group">&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;        <span class="input-group-addon">Please select</span>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;            <select name="comp_select" class="selectpicker form-control">&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;              {% for o in data %}&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;              <option value="{{ o.name }}">{{ o.name }}</option>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;              {% endfor %}&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;            </select>&ndash;&gt;&ndash;&gt;-->
+
+<!--&lt;!&ndash;      <div class="mb-3">&ndash;&gt;-->
+<!--&lt;!&ndash;  <label for="Product_Id_L" class="form-label">Product_Id</label>&ndash;&gt;-->
+<!--&lt;!&ndash;  <input type="text" class="form-control" name="Product_Id" id="Product_Id" placeholder="">&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;<div class="mb-3">&ndash;&gt;-->
+<!--&lt;!&ndash;  <label for="Daily-Off_Category_L" class="form-label">Daily-Off Category</label>&ndash;&gt;-->
+<!--&lt;!&ndash;  <input type="text" class="form-control" name="Daily-Off_Category" id="Daily-Off_Category" placeholder="">&ndash;&gt;-->
+
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;      <div class="col-auto">&ndash;&gt;-->
+<!--&lt;!&ndash;    <button type="submit" class="btn btn-primary mb-3">submit</button>&ndash;&gt;-->
+<!--&lt;!&ndash;  </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;      </div>&ndash;&gt;-->
+<!--&lt;!&ndash;      </div>&ndash;&gt;-->
+<!--&lt;!&ndash;</form>&ndash;&gt;-->
+<!--&lt;!&ndash;</body>&ndash;&gt;-->
+<!--&lt;!&ndash;</html>&ndash;&gt;-->
+
+
+
+
+<!--&lt;!&ndash;<!DOCTYPE html>&ndash;&gt;-->
+<!--&lt;!&ndash;<html lang="en">&ndash;&gt;-->
+<!--&lt;!&ndash;<head>&ndash;&gt;-->
+<!--&lt;!&ndash;    <meta charset="UTF-8">&ndash;&gt;-->
+<!--&lt;!&ndash;    <title>پنل دیلی آف</title>&ndash;&gt;-->
+<!--&lt;!&ndash;     &lt;!&ndash; Latest compiled and minified CSS &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">&ndash;&gt;-->
+
+<!--&lt;!&ndash;&lt;!&ndash; jQuery library &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>&ndash;&gt;-->
+
+<!--&lt;!&ndash;&lt;!&ndash; Latest compiled JavaScript &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>&ndash;&gt;-->
+
+<!--&lt;!&ndash;</head>&ndash;&gt;-->
+<!--&lt;!&ndash;<body>&ndash;&gt;-->
+<!--&lt;!&ndash;<form class="form-inline" method="POST" action="daily-off-pannel">&ndash;&gt;-->
+<!--&lt;!&ndash;  <div class="form-group">&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;    <div class="input-group">&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;        <span class="input-group-addon">Please select</span>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;            <select name="comp_select" class="selectpicker form-control">&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;              {% for o in data %}&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;              <option value="{{ o.name }}">{{ o.name }}</option>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;              {% endfor %}&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;            </select>&ndash;&gt;&ndash;&gt;-->
+
+<!--&lt;!&ndash;      <div class="mb-3">&ndash;&gt;-->
+<!--&lt;!&ndash;  <label for="Product_Id_L" class="form-label">Product_Id</label>&ndash;&gt;-->
+<!--&lt;!&ndash;  <input type="text" class="form-control" name="Product_Id" id="Product_Id" placeholder="">&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;<div class="mb-3">&ndash;&gt;-->
+<!--&lt;!&ndash;  <label for="Daily-Off_Category_L" class="form-label">Daily-Off Category</label>&ndash;&gt;-->
+<!--&lt;!&ndash;  <input type="text" class="form-control" name="Daily-Off_Category" id="Daily-Off_Category" placeholder="">&ndash;&gt;-->
+
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;      <div class="col-auto">&ndash;&gt;-->
+<!--&lt;!&ndash;    <button type="submit" class="btn btn-primary mb-3">submit</button>&ndash;&gt;-->
+<!--&lt;!&ndash;  </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;      </div>&ndash;&gt;-->
+<!--&lt;!&ndash;      </div>&ndash;&gt;-->
+<!--&lt;!&ndash;</form>&ndash;&gt;-->
+<!--&lt;!&ndash;</body>&ndash;&gt;-->
+<!--&lt;!&ndash;</html>&ndash;&gt;-->
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <title>Bootstrap Example</title>-->
+<!--    <meta charset="utf-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">-->
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+<!--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
+
+<!--    <title>Persian DateTime</title>-->
+
+<!--  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"-->
+<!--    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">-->
+<!--  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"-->
+<!--    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"-->
+<!--    crossorigin="anonymous"></script>-->
+<!--  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"-->
+<!--    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"-->
+<!--    crossorigin="anonymous"></script>-->
+<!--  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"-->
+<!--    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"-->
+<!--    crossorigin="anonymous"></script>-->
+<!--    <script src="../static/jquery.md.bootstrap.datetimepicker.js"></script>-->
+<!--    <link rel="stylesheet" href="../static/styles/jquery.md.bootstrap.datetimepicker.style.css">-->
+
+<!--&lt;!&ndash;    <link href="/dist/jquery.md.bootstrap.datetimepicker.style.css" rel="stylesheet"/>&ndash;&gt;-->
+<!--&lt;!&ndash;    <script src="/dist/jquery.md.bootstrap.datetimepicker.js"></script>&ndash;&gt;-->
+<!--</head>-->
+<!--<body>-->
+
+<!--<div class="jumbotron text-center">-->
+<!--    <h1>My First Bootstrap Page</h1>-->
+<!--    <p>Resize this responsive page to see the effect!</p>-->
+<!--</div>-->
+
+<!--<div class="container">-->
+<!--    <div class="row">-->
+<!--        &lt;!&ndash;    <div class="col-sm-4">&ndash;&gt;-->
+<!--        &lt;!&ndash;      <h3>Column 1</h3>&ndash;&gt;-->
+<!--        &lt;!&ndash;      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>&ndash;&gt;-->
+<!--        &lt;!&ndash;      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>&ndash;&gt;-->
+<!--        &lt;!&ndash;    </div>&ndash;&gt;-->
+<!--        &lt;!&ndash;    <div class="col-sm-4">&ndash;&gt;-->
+<!--        &lt;!&ndash;      <h3>Column 2</h3>&ndash;&gt;-->
+<!--        &lt;!&ndash;      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>&ndash;&gt;-->
+<!--        &lt;!&ndash;      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>&ndash;&gt;-->
+<!--        &lt;!&ndash;    </div>&ndash;&gt;-->
+<!--        &lt;!&ndash;    <div class="col-sm-4">&ndash;&gt;-->
+<!--        &lt;!&ndash;      <h3>Column 3</h3>        &ndash;&gt;-->
+<!--        &lt;!&ndash;      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>&ndash;&gt;-->
+<!--        &lt;!&ndash;      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>&ndash;&gt;-->
+<!--        &lt;!&ndash;    </div>&ndash;&gt;-->
+<!--        &lt;!&ndash;      &ndash;&gt;-->
+
+
+<!--        <form class="form-inline" method="POST" action="daily-off-pannel">-->
+<!--            <div class="form-group">-->
+<!--                &lt;!&ndash;    <div class="input-group">&ndash;&gt;-->
+<!--                &lt;!&ndash;        <span class="input-group-addon">Please select</span>&ndash;&gt;-->
+<!--                &lt;!&ndash;            <select name="comp_select" class="selectpicker form-control">&ndash;&gt;-->
+<!--                &lt;!&ndash;              {% for o in data %}&ndash;&gt;-->
+<!--                &lt;!&ndash;              <option value="{{ o.name }}">{{ o.name }}</option>&ndash;&gt;-->
+<!--                &lt;!&ndash;              {% endfor %}&ndash;&gt;-->
+<!--                &lt;!&ndash;            </select>&ndash;&gt;-->
+
+<!--                <div class="mb-3">-->
+<!--                    <label for="Product_Id_L" class="form-label">Product_Id</label>-->
+<!--                    <input type="text" class="form-control" name="Product_Id" id="Product_Id" placeholder="">-->
+<!--                </div>-->
+<!--                <div class="mb-3">-->
+<!--                    <label for="Daily-Off_Category_L" class="form-label">Daily-Off Category</label>-->
+<!--                    <input type="text" class="form-control" name="Daily-Off_Category" id="Daily-Off_Category"-->
+<!--                           placeholder="">-->
+
+<!--                </div>-->
+
+<!--                <div class="mb-3">-->
+<!--                    <label for="Owner_Id_L" class="form-label">Owner_Id</label>-->
+<!--                    <input type="text" class="form-control" name="Owner_Id" id="Owner_Id" placeholder="">-->
+<!--                </div>-->
+
+<!--&lt;!&ndash;                 <hr>&ndash;&gt;-->
+<!--&lt;!&ndash;    <h3>Range - fromDate, toDate</h3>&ndash;&gt;-->
+<!--&lt;!&ndash;    <div class="row">&ndash;&gt;-->
+<!--&lt;!&ndash;      <div class="col-sm-6">&ndash;&gt;-->
+<!--&lt;!&ndash;        <pre>&ndash;&gt;-->
+<!--&lt;!&ndash;$('#date4').MdPersianDateTimePicker({&ndash;&gt;-->
+<!--&lt;!&ndash;    targetTextSelector: '#inputDate4',&ndash;&gt;-->
+<!--&lt;!&ndash;    fromDate: true,&ndash;&gt;-->
+<!--&lt;!&ndash;    enableTimePicker: true,&ndash;&gt;-->
+<!--&lt;!&ndash;    groupId: 'rangeSelector1',&ndash;&gt;-->
+<!--&lt;!&ndash;    dateFormat: 'yyyy-MM-dd HH:mm:ss',&ndash;&gt;-->
+<!--&lt;!&ndash;    textFormat: 'yyyy-MM-dd HH:mm:ss',&ndash;&gt;-->
+<!--&lt;!&ndash;});&ndash;&gt;-->
+<!--&lt;!&ndash;                </pre>&ndash;&gt;-->
+<!--        <div class="input-group">-->
+<!--          <div class="input-group-prepend">-->
+<!--            <span class="input-group-text cursor-pointer" id="date4">Icon</span>-->
+<!--          </div>-->
+<!--          <input type="text" id="inputDate4" class="form-control" name="Daily_off_DateTime" placeholder="From Date" aria-label="date4"-->
+<!--            aria-describedby="date4">-->
+<!--        </div>-->
+<!--&lt;!&ndash;      </div>&ndash;&gt;-->
+<!--&lt;!&ndash;      <div class="col-sm-6">&ndash;&gt;-->
+<!--&lt;!&ndash;        <pre>&ndash;&gt;-->
+
+<!--                <div class="col-auto">-->
+<!--                    <button type="submit" class="btn btn-primary mb-3">submit</button>-->
+<!--                </div>-->
+
+
+<!--&lt;!&ndash;                <div class="input-group">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="input-group-prepend">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <span class="input-group-text cursor-pointer" id="date1">Icon</span>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <input type="text" id="inputDate1" class="form-control" placeholder="Persian Calendar Text"&ndash;&gt;-->
+<!--&lt;!&ndash;                           aria-label="date1"&ndash;&gt;-->
+<!--&lt;!&ndash;                           aria-describedby="date1">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <input type="text" id="inputDate1-1" class="form-control" placeholder="Persian Calendar Date"&ndash;&gt;-->
+<!--&lt;!&ndash;                           aria-label="date11" aria-describedby="date11">&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--            </div>-->
+
+<!--    </form>-->
+
+
+<!--    &lt;!&ndash;      <form>&ndash;&gt;-->
+<!--    &lt;!&ndash;  <div class="form-group">&ndash;&gt;-->
+<!--    &lt;!&ndash;    <label for="exampleInputEmail1">Email address</label>&ndash;&gt;-->
+<!--    &lt;!&ndash;    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">&ndash;&gt;-->
+<!--    &lt;!&ndash;    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>&ndash;&gt;-->
+<!--    &lt;!&ndash;  </div>&ndash;&gt;-->
+<!--    &lt;!&ndash;  <div class="form-group">&ndash;&gt;-->
+<!--    &lt;!&ndash;    <label for="exampleInputPassword1">Password</label>&ndash;&gt;-->
+<!--    &lt;!&ndash;    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">&ndash;&gt;-->
+<!--    &lt;!&ndash;  </div>&ndash;&gt;-->
+<!--    &lt;!&ndash;  <div class="form-group form-check">&ndash;&gt;-->
+<!--    &lt;!&ndash;    <input type="checkbox" class="form-check-input" id="exampleCheck1">&ndash;&gt;-->
+<!--    &lt;!&ndash;    <label class="form-check-label" for="exampleCheck1">Check me out</label>&ndash;&gt;-->
+<!--    &lt;!&ndash;  </div>&ndash;&gt;-->
+<!--    &lt;!&ndash;  <button type="submit" class="btn btn-primary">Submit</button>&ndash;&gt;-->
+<!--    &lt;!&ndash;</form>&ndash;&gt;-->
+
+<!--</div>-->
+<!--</div>-->
+
+<!--&lt;!&ndash;<script>&ndash;&gt;-->
+<!--&lt;!&ndash;    $('#Daily-Off_Category').MdPersianDateTimePicker({&ndash;&gt;-->
+<!--&lt;!&ndash;        targetTextSelector: '#Daily-Off_Category',&ndash;&gt;-->
+<!--&lt;!&ndash;        targetDateSelector: '#Daily-Off_Category',&ndash;&gt;-->
+<!--&lt;!&ndash;    });&ndash;&gt;-->
+
+<!--&lt;!&ndash;    $('#date1').MdPersianDateTimePicker({&ndash;&gt;-->
+<!--&lt;!&ndash;    targetTextSelector: '#inputDate1',&ndash;&gt;-->
+<!--&lt;!&ndash;    targetDateSelector: '#inputDate1-1',&ndash;&gt;-->
+<!--&lt;!&ndash;    dateFormat: 'yyyy-MM-dd hh:mm:ss',&ndash;&gt;-->
+<!--&lt;!&ndash;    isGregorian: true,&ndash;&gt;-->
+<!--&lt;!&ndash;    enableTimePicker: true,&ndash;&gt;-->
+<!--&lt;!&ndash;    disableBeforeToday: true,&ndash;&gt;-->
+<!--&lt;!&ndash;    disabledDates: [new Date(),&ndash;&gt;-->
+<!--&lt;!&ndash;        new Date(2018, 9, 11),&ndash;&gt;-->
+<!--&lt;!&ndash;        new Date(2018, 9, 12),&ndash;&gt;-->
+<!--&lt;!&ndash;        new Date(2018, 9, 13),&ndash;&gt;-->
+<!--&lt;!&ndash;        new Date(2018, 9, 14)],&ndash;&gt;-->
+<!--&lt;!&ndash;    disabledDays: [5, 6]&ndash;&gt;-->
+<!--&lt;!&ndash;});&ndash;&gt;-->
+
+<!--&lt;!&ndash;</script>&ndash;&gt;-->
+<!--<script type="text/javascript">-->
+<!--    $('#date4').MdPersianDateTimePicker({-->
+<!--      targetTextSelector: '#inputDate4',-->
+<!--      fromDate: true,-->
+<!--      enableTimePicker: true,-->
+<!--      groupId: 'rangeSelector1',-->
+<!--      dateFormat: 'yyyy-MM-dd HH:mm:ss',-->
+<!--      textFormat: 'yyyy-MM-dd HH:mm:ss',-->
+<!--    });-->
+<!--     </script>-->
+
+<!--  <br><br>-->
+
+<!--</body>-->
+<!--</html>-->
+
